@@ -17,13 +17,17 @@ public class AccountConceptQueries
         bool? activeOnly)
     {
         var query = context.Accounts.Where(a => a.CompanyId == companyId);
-        
-        if (accountType.HasValue) 
+
+        if (accountType.HasValue)
+        {
             query = query.Where(a => a.AccountType == accountType.Value);
-            
-        if (activeOnly.HasValue && activeOnly.Value) 
+        }
+
+        if (activeOnly == true)
+        {
             query = query.Where(a => a.IsActive);
-            
+        }
+
         return query;
     }
 
@@ -34,13 +38,17 @@ public class AccountConceptQueries
         bool? activeOnly)
     {
         var query = context.Concepts.Where(c => c.CompanyId == companyId);
-        
-        if (conceptType.HasValue) 
+
+        if (conceptType.HasValue)
+        {
             query = query.Where(c => c.ConceptType == conceptType.Value);
-            
-        if (activeOnly.HasValue && activeOnly.Value) 
+        }
+
+        if (activeOnly == true)
+        {
             query = query.Where(c => c.IsActive);
-            
+        }
+
         return query;
     }
 }

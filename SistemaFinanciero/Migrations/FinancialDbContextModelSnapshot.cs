@@ -75,34 +75,34 @@ namespace SistemaFinanciero.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("53890490-08ae-4208-aefa-b78066b96f93"),
+                            Id = new Guid("a1111111-1111-1111-1111-111111111111"),
                             AccountType = 2,
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Caja Chica",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("a51b0c0f-2cec-4d8a-a4db-5e125d60a29b"),
+                            Id = new Guid("a2222222-1111-1111-1111-111111111111"),
                             AccountType = 0,
                             BankName = "Banamex",
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Cuenta Operativa",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("c7e3800d-7e09-4de6-967c-a5c967a267c8"),
+                            Id = new Guid("a3333333-1111-1111-1111-111111111111"),
                             AccountType = 4,
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Fondo de Inversión",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         });
                 });
 
@@ -147,103 +147,103 @@ namespace SistemaFinanciero.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("624c8b1a-b5ee-491d-9543-eaa83bb32d73"),
+                            Id = new Guid("c1111111-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 0,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Venta de servicios",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("e8c69902-0937-465d-83be-f1cef2e5db50"),
+                            Id = new Guid("c1111112-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 0,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Rendimientos",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("899f8e9d-2bb3-4715-bdd1-7b8545b37780"),
+                            Id = new Guid("c1111113-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 0,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Aportación de capital",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("c9777066-825e-4844-b688-a4347e9b98cd"),
+                            Id = new Guid("c1111114-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 0,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Venta de activos",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("503182de-4325-427d-81a2-12a92e429087"),
+                            Id = new Guid("c1111115-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 0,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Reembolsos",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("ab29becf-b011-4b00-ad4a-05253f13e4f0"),
+                            Id = new Guid("c2222221-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 1,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Pago de nómina",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("5de947ab-4805-4f68-adc2-50bd9648f1b1"),
+                            Id = new Guid("c2222222-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 1,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Renta de oficina",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("0d5d8a12-b23e-4fa4-9f11-d8a4b2fd9dab"),
+                            Id = new Guid("c2222223-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 1,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Servicios públicos",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("7a08746a-cff7-4613-b165-be966346d0f0"),
+                            Id = new Guid("c2222224-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 1,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Compra de equipo",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
-                            Id = new Guid("a9c900c3-adbe-496c-866c-9eacd17d2058"),
+                            Id = new Guid("c2222225-1111-1111-1111-111111111111"),
                             CompanyId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ConceptType = 1,
-                            CreatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             Name = "Licencias de software",
-                            UpdatedAt = new DateTime(2026, 9, 27, 0, 28, 9, 198, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         });
                 });
 #pragma warning restore 612, 618
