@@ -1,0 +1,24 @@
+using System;
+using SistemaFinanciero.Models;
+
+namespace SistemaFinanciero.GraphQL;
+
+public record CreateAccountInput(
+    Guid CompanyId,
+    AccountType AccountType,
+    string Name,
+    string? BankName,
+    string? AccountNumber,
+    string? Clabe,
+    string? CardLastDigits,
+    string? ShortDescription,
+    string? LongDescription
+);
+
+public record CreateConceptInput(
+    Guid CompanyId,
+    ConceptType ConceptType,
+    string Name,
+    string? ShortDescription,
+    string? LongDescription
+);
