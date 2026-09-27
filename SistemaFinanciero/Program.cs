@@ -11,8 +11,10 @@ builder.Services
     .AddGraphQLServer()
     .AddQueryType(q => q.Name("Query"))
         .AddTypeExtension<AccountConceptQueries>()
+        .AddTypeExtension<AccountConceptRelationQueries>()
     .AddMutationType(m => m.Name("Mutation"))
-        .AddTypeExtension<AccountConceptMutations>();
+        .AddTypeExtension<AccountConceptMutations>()
+        .AddTypeExtension<AccountConceptRelationMutations>();
 
 var app = builder.Build();
 

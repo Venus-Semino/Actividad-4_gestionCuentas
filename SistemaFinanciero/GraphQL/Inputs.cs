@@ -22,3 +22,8 @@ public record CreateConceptInput(
     string? ShortDescription,
     string? LongDescription
 );
+
+public record AssignConceptToAccountInput(
+    Guid AccountId,
+    Guid ConceptId
+);
