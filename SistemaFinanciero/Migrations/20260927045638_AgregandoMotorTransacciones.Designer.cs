@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using SistemaFinanciero.Data;
@@ -11,9 +12,11 @@ using SistemaFinanciero.Data;
 namespace SistemaFinanciero.Migrations
 {
     [DbContext(typeof(FinancialDbContext))]
-    partial class FinancialDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260927045638_AgregandoMotorTransacciones")]
+    partial class AgregandoMotorTransacciones
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -411,11 +414,11 @@ namespace SistemaFinanciero.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f1111111-1111-1111-1111-111111111111"),
+                            Id = new Guid("38b1e50f-9c3e-4194-b449-7e736163ea9e"),
                             AccountId = new Guid("a1111111-1111-1111-1111-111111111111"),
                             Amount = 1500.00m,
                             CapturedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
-                            CapturedBy = new Guid("12345678-1234-1234-1234-123456789012"),
+                            CapturedBy = new Guid("e7fa0299-4667-437f-bc41-91cbfccb29f2"),
                             ConceptId = new Guid("c1111115-1111-1111-1111-111111111111"),
                             CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
@@ -425,11 +428,11 @@ namespace SistemaFinanciero.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f2222222-1111-1111-1111-111111111111"),
+                            Id = new Guid("da6a1450-4096-45b9-ad11-9bfba2193b4b"),
                             AccountId = new Guid("a2222222-1111-1111-1111-111111111111"),
                             Amount = 8500.00m,
                             CapturedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
-                            CapturedBy = new Guid("12345678-1234-1234-1234-123456789012"),
+                            CapturedBy = new Guid("e7fa0299-4667-437f-bc41-91cbfccb29f2"),
                             ConceptId = new Guid("c2222222-1111-1111-1111-111111111111"),
                             CreatedAt = new DateTime(2026, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
