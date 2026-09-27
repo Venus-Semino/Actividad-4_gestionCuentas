@@ -87,18 +87,17 @@ public class FinancialDbContext : DbContext
             .Property(t => t.Amount)
             .HasPrecision(18, 2);
 
-        // Definir usuarios ficticios para cumplir con "usuario autenticado"
-        var userId = Guid.NewGuid();
+    
 
-        // Aquí inicia la generación de tus 20 movimientos[cite: 3]
-        // Te dejo 2 ejemplos usando los IDs que tu equipo ya definió en el Día 1. 
-        // Debes replicar este patrón para completar los 20[cite: 3].
+        // Definir usuario ficticio estático en lugar de NewGuid()
+        var userId = Guid.Parse("12345678-1234-1234-1234-123456789012");
+
         modelBuilder.Entity<Transaction>().HasData(
             new
             {
-                Id = Guid.NewGuid(),
+                Id = Guid.Parse("f1111111-1111-1111-1111-111111111111"),
                 AccountId = cajaChicaId,
-                ConceptId = Guid.Parse("c1111115-1111-1111-1111-111111111111"), // Reembolsos
+                ConceptId = Guid.Parse("c1111115-1111-1111-1111-111111111111"),
                 TransactionType = TransactionType.INCOME,
                 Amount = 1500.00m,
                 TransactionDate = fixedDate,
@@ -110,9 +109,9 @@ public class FinancialDbContext : DbContext
             },
             new
             {
-                Id = Guid.NewGuid(),
+                Id = Guid.Parse("f2222222-1111-1111-1111-111111111111"),
                 AccountId = cuentaOperativaId,
-                ConceptId = Guid.Parse("c2222222-1111-1111-1111-111111111111"), // Renta de oficina
+                ConceptId = Guid.Parse("c2222222-1111-1111-1111-111111111111"),
                 TransactionType = TransactionType.EXPENSE,
                 Amount = 8500.00m,
                 TransactionDate = fixedDate,
@@ -122,7 +121,6 @@ public class FinancialDbContext : DbContext
                 CreatedAt = fixedDate,
                 UpdatedAt = fixedDate
             }
-        // TODO: Continúa agregando hasta llegar a 20 instancias para cumplir tu rubrica.
         );
     }
 }

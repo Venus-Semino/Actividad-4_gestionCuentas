@@ -32,16 +32,24 @@ public class Transaction
         UpdatedAt = DateTime.UtcNow;
     }
 
-    // Constructor para forzar la inyección de datos críticos y validar estado interno
-    public Transaction(Guid accountId, Guid conceptId, decimal amount, TransactionType type, Guid capturedBy)
+    // Constructor vacío sin parámetros reservado estrictamente para uso de Entity Framework Core.
+    // Lo hacemos 'protected' (o private) para que ninguna otra capa del sistema pueda instanciar
+    // una transacción vacía y saltarse nuestras validaciones.
+    protected Transaction()
     {
-        if (amount <= 0) throw new ArgumentException("El monto debe ser mayor que cero."); 
+    }
+
+    // Constructor de negocio para forzar la inyección de datos críticos y validar estado interno
+    // Notarás que cambiamos 'type' por 'transactionType' para que haga match con la propiedad.
+    public Transaction(Guid accountId, Guid conceptId, decimal amount, TransactionType transactionType, Guid capturedBy)
+    {
+        if (amount <= 0) throw new ArgumentException("El monto debe ser mayor que cero.");
 
         Id = Guid.NewGuid();
         AccountId = accountId;
         ConceptId = conceptId;
         Amount = amount;
-        TransactionType = type;
+        TransactionType = transactionType;
         CapturedBy = capturedBy;
         TransactionDate = DateTime.UtcNow;
         CapturedAt = DateTime.UtcNow;
