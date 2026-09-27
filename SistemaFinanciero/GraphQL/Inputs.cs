@@ -27,3 +27,14 @@ public record AssignConceptToAccountInput(
     Guid AccountId,
     Guid ConceptId
 );
+
+public record CreateTransactionInput(
+    Guid AccountId,
+    Guid ConceptId,
+    TransactionType TransactionType,
+    decimal Amount,
+    DateTime? TransactionDate,
+    string? ShortDescription,
+    string? LongDescription,
+    Guid CapturedBy // Simulando el usuario autenticado
+);

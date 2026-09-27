@@ -11,7 +11,7 @@ public class FinancialDbContext : DbContext
     public DbSet<AccountConcept> AccountConcepts { get; set; } = null!;
 
     public FinancialDbContext(DbContextOptions<FinancialDbContext> options) : base(options) { }
-
+    public DbSet<Transaction> Transactions { get; set; } = null!;
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
@@ -80,6 +80,49 @@ public class FinancialDbContext : DbContext
             new AccountConcept { Id = Guid.Parse("ac100008-1111-1111-1111-111111111111"), AccountId = cuentaOperativaId, ConceptId = Guid.Parse("c2222225-1111-1111-1111-111111111111"), IsActive = true, CreatedAt = fixedDate },
             new AccountConcept { Id = Guid.Parse("ac100009-1111-1111-1111-111111111111"), AccountId = fondoInversionId, ConceptId = Guid.Parse("c1111112-1111-1111-1111-111111111111"), IsActive = true, CreatedAt = fixedDate },
             new AccountConcept { Id = Guid.Parse("ac10000a-1111-1111-1111-111111111111"), AccountId = fondoInversionId, ConceptId = Guid.Parse("c1111114-1111-1111-1111-111111111111"), IsActive = true, CreatedAt = fixedDate }
+        );
+
+        // Configuración de precisión para dinero
+        modelBuilder.Entity<Transaction>()
+            .Property(t => t.Amount)
+            .HasPrecision(18, 2);
+
+        // Definir usuarios ficticios para cumplir con "usuario autenticado"
+        var userId = Guid.NewGuid();
+
+        // Aquí inicia la generación de tus 20 movimientos[cite: 3]
+        // Te dejo 2 ejemplos usando los IDs que tu equipo ya definió en el Día 1. 
+        // Debes replicar este patrón para completar los 20[cite: 3].
+        modelBuilder.Entity<Transaction>().HasData(
+            new
+            {
+                Id = Guid.NewGuid(),
+                AccountId = cajaChicaId,
+                ConceptId = Guid.Parse("c1111115-1111-1111-1111-111111111111"), // Reembolsos
+                TransactionType = TransactionType.INCOME,
+                Amount = 1500.00m,
+                TransactionDate = fixedDate,
+                CapturedAt = fixedDate,
+                CapturedBy = userId,
+                IsActive = true,
+                CreatedAt = fixedDate,
+                UpdatedAt = fixedDate
+            },
+            new
+            {
+                Id = Guid.NewGuid(),
+                AccountId = cuentaOperativaId,
+                ConceptId = Guid.Parse("c2222222-1111-1111-1111-111111111111"), // Renta de oficina
+                TransactionType = TransactionType.EXPENSE,
+                Amount = 8500.00m,
+                TransactionDate = fixedDate,
+                CapturedAt = fixedDate,
+                CapturedBy = userId,
+                IsActive = true,
+                CreatedAt = fixedDate,
+                UpdatedAt = fixedDate
+            }
+        // TODO: Continúa agregando hasta llegar a 20 instancias para cumplir tu rubrica.
         );
     }
 }

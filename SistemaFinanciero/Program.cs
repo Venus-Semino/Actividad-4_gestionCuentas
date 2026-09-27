@@ -14,7 +14,8 @@ builder.Services
         .AddTypeExtension<AccountConceptRelationQueries>()
     .AddMutationType(m => m.Name("Mutation"))
         .AddTypeExtension<AccountConceptMutations>()
-        .AddTypeExtension<AccountConceptRelationMutations>();
+        .AddTypeExtension<AccountConceptRelationMutations>()
+        .AddTypeExtension<TransactionMutations>();
 
 var app = builder.Build();
 
