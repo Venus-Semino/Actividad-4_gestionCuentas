@@ -1,8 +1,8 @@
 # Actividad 4. Gestión de cuentas, conceptos y movimientos
 
-El repositorio tiene dos programas. La actividad se entrega en **SistemaFinanciero** (C# y HotChocolate). **Actividad3_FastAPI** es una versión en Python de cuentas y conceptos, sin la relación cuenta-concepto.
+La actividad se entrega en **SistemaFinanciero** (C# y HotChocolate).
 
-Docker Desktop tiene que estar encendido antes de cualquiera de los dos.
+Docker Desktop tiene que estar encendido antes de arrancar.
 
 ## SistemaFinanciero
 
@@ -31,15 +31,3 @@ dotnet run --launch-profile http
 GraphQL: [http://localhost:5198/graphql](http://localhost:5198/graphql)
 
 La herramienta `dotnet-ef` solo se instala la primera vez.
-
-## Actividad3_FastAPI
-
-Dentro de la carpeta `Actividad3_FastAPI`:
-
-```powershell
-docker compose up -d --build
-```
-
-GraphQL: [http://localhost:8000/graphql](http://localhost:8000/graphql)
-
-Esa base usa el puerto 5432 y la contraseña `tu_password`. Si PostgreSQL de Windows ya ocupa el 5432, el contenedor no puede arrancar. Los movimientos de la actividad no se programan en esta carpeta.
