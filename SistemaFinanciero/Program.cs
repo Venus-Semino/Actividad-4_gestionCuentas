@@ -11,7 +11,6 @@ builder.Services.AddDbContext<FinancialDbContext>(options =>
 // 2. Configurar HotChocolate GraphQL
 builder.Services
     .AddGraphQLServer()
-    .RegisterDbContextFactory<FinancialDbContext>()
     .AddQueryType(q => q.Name("Query"))
         .AddTypeExtension<AccountConceptQueries>()
     .AddMutationType(m => m.Name("Mutation"))

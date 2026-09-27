@@ -1,0 +1,8 @@
+/home/venus/UNI/Fundamentos-Arcquitectura/Actividad#3_EmpresaUsuario/SistemaFinanciero/obj/Debug/net10.0/SistemaFinanciero.csproj.AssemblyReference.cache
+/home/venus/UNI/Fundamentos-Arcquitectura/Actividad#3_EmpresaUsuario/SistemaFinanciero/obj/Debug/net10.0/rpswa.dswa.cache.json
+/home/venus/UNI/Fundamentos-Arcquitectura/Actividad#3_EmpresaUsuario/SistemaFinanciero/obj/Debug/net10.0/SistemaFinanciero.GeneratedMSBuildEditorConfig.editorconfig
+/home/venus/UNI/Fundamentos-Arcquitectura/Actividad#3_EmpresaUsuario/SistemaFinanciero/obj/Debug/net10.0/SistemaFinanciero.AssemblyInfoInputs.cache
+/home/venus/UNI/Fundamentos-Arcquitectura/Actividad#3_EmpresaUsuario/SistemaFinanciero/obj/Debug/net10.0/SistemaFinanciero.AssemblyInfo.cs
+/home/venus/UNI/Fundamentos-Arcquitectura/Actividad#3_EmpresaUsuario/SistemaFinanciero/obj/Debug/net10.0/SistemaFinanciero.csproj.CoreCompileInputs.cache
+/home/venus/UNI/Fundamentos-Arcquitectura/Actividad#3_EmpresaUsuario/SistemaFinanciero/obj/Debug/net10.0/SistemaFinanciero.MvcApplicationPartsAssemblyInfo.cache
+/home/venus/UNI/Fundamentos-Arcquitectura/Actividad#3_EmpresaUsuario/SistemaFinanciero/obj/Debug/net10.0/SistemaFinanciero.sourcelink.json
